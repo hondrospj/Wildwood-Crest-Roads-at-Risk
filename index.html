@@ -2667,6 +2667,7 @@
         min-height:220px;
       }
     }
+
     /* RoadRisk workbench — shared Floodmapper/Dashboard design language. */
     :root{
       --right-rail:clamp(560px, 39vw, 680px);
@@ -3327,6 +3328,7 @@
         animation-iteration-count:1 !important;
       }
     }
+
     /* Pane help and guided tutorial. */
     .mapHeaderActions,
     .paneHeaderActions{
@@ -6045,10 +6047,12 @@
     }
 
     function defaultSection(){
-      // East/West Fern Road: Sunset Lake (bay side) to the beach.
+      // Default municipality cross-section.
       drawSection(
         L.latLng(38.97661, -74.83806),
         L.latLng(38.97191, -74.83229),
+        false,
+        null,
         false
       );
     }
